@@ -41,9 +41,11 @@ const Launch = (props) => {
             &#10006;
           </span>
           <h5 className="Launch-id">
-            <b>ID:</b> {id.substr(0, 8) + "..."}
+            <b>ID:</b> {id ? id.substr(0, 8) + "..." : null}
           </h5>
-          <span className="Launch-detail">{details.substr(0, 80) + "..."}</span>
+          <span className="Launch-detail">
+            {details ? details.substr(0, 80) + "..." : null}
+          </span>
         </div>
       ) : null}
     </div>
