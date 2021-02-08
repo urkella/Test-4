@@ -15,7 +15,7 @@
   align-items: center;
   justify-content: flex-start;
   min-height: 100vh;
-  padding: 0 24px;
+  padding: 0 24px 48px 24px;
 
   /* Style */
   background-color: #282c34;
@@ -26,17 +26,10 @@
 }
 
 .App-heading {
-  margin: 48px 0 34px;
+  margin: 48px 0 24px;
   line-height: 1;
 }
 
 .App-results-wrapper {
   position: relative;
-  padding: 0 24px;
-  max-height: 700px;
-  max-width: 1000px;
-  overflow-y: auto;
-}
-
-.App-list {
 }

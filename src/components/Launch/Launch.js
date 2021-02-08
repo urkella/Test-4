@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { string } from "prop-types";
+import { string, object, number } from "prop-types";
 import moment from "moment";
 
 import "./Launch.css";
@@ -53,13 +53,21 @@ const Launch = (props) => {
 };
 
 Launch.defaultProps = {
+  id: null,
   name: null,
+  links: [],
+  details: null,
   date_local: null,
+  static_fire_date_unix: null,
 };
 
 Launch.propTypes = {
+  id: string,
   name: string,
+  links: object,
+  details: string,
   date_local: string,
+  static_fire_date_unix: number,
 };
 
 export default Launch;
